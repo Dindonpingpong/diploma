@@ -1,4 +1,8 @@
+from PIL import Image, ImageDraw
+import face_recognition
+import pickle
 import cv2
+import numpy as np
 
 def predict(X_frame, knn_clf=None, model_path=None, distance_threshold=0.5):
     """
